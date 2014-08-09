@@ -33,7 +33,7 @@ public class ReadParagraph {
 				for (int i = 0; i < sentences.length; i++) {
 
 					if (!sentences[i].isEmpty()){
-						System.out.println("Sentence :" + sentences[i]);
+						System.out.println("Sentence is :" + sentences[i]);
 						new POSTagTestData(sentences[i]);
 					}
 				}
