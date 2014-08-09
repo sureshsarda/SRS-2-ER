@@ -1,7 +1,7 @@
 package stop_words;
 
 import node.*;
-import read_xml.*;
+import read_training_data_xml.ReadXML;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;

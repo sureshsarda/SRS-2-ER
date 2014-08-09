@@ -20,7 +20,7 @@ public class LoadStopWords {
 	public LoadStopWords() {
 		
 		try {
-			fr = new FileReader("D:\\Workplace\\Eclipse Workspace\\SRS2ER\\stopWords.csv");
+			fr = new FileReader("D:\\Workplace\\Git Workspace\\SRS2ER\\SRS2ER\\stopWords.csv");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

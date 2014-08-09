@@ -16,7 +16,7 @@ public class ReadParagraph {
 	public ReadParagraph() {
 
 		try {
-			fr = new FileReader("D:\\Workplace\\Eclipse Workspace\\SRS2ER\\paragraph.txt");
+			fr = new FileReader("D:\\Workplace\\Git Workspace\\SRS2ER\\SRS2ER\\paragraph.txt");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			System.err.println("File Not Found");

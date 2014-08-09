@@ -3,7 +3,7 @@ package insert_into_trie;
 import java.util.Collection;
 import java.util.Iterator;
 
-import read_xml.*;
+import read_training_data_xml.ReadXML;
 import node.*;
 
 public class InsertIntoTrie {

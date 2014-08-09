@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Sentences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Sentence Id="0">
+  <Value>A software is created by an organization.</Value>  <DataModel>
+    <Entities>
+      <Entity Id="0">    
+    <WordId>software</WordId>
+<Attribute>organization</Attribute>
+      </Entity>
+      <Entity Id="1">
+        <WordId>organization</WordId>
+<Attribute>software</Attribute>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship Id="0">
+        <WordId>created</WordId>
+        <Connects>
+          <WordId>software</WordId>
+          <WordId>organization</WordId>
+        </Connects>
+      </Relationship>
+    </Relationships>
+  </DataModel>
+</Sentence>
+
+</Sentences>
