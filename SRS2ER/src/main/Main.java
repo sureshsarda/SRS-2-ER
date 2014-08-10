@@ -14,7 +14,6 @@ import read_training_data_xml.ReadXML;
 /**
  * Driver routines to begin execution of the program
  * @author Pooja Mantri (Edited by Suresh Sarda)
- *
  */
 
 public class Main {

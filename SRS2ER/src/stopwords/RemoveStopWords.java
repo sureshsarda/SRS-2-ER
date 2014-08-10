@@ -1,4 +1,4 @@
-package stop_words;
+package stopwords;
 
 import node.*;
 import read_training_data_xml.ReadXML;

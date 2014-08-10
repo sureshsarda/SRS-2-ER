@@ -1,6 +1,6 @@
 package read_training_data_xml;
 
-import insert_into_trie.*;
+import insert_into_trie.InsertIntoTrie;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,15 +17,17 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
+import node.Attribute;
+import node.Entity;
+import node.Relationship;
+import node.Sequence;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import read_tagged_sentences.ReadTaggedTestDataXml;
-import read_test_data.ReadParagraph;
-import stop_words.RemoveStopWords;
-import node.*;
+import stopwords.RemoveStopWords;
 
 public class ReadXML {
 	// List of Training Sequences is   stored
