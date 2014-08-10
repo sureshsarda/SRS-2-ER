@@ -2,7 +2,7 @@ package node;
 
 
 public class Attribute {
-	//Word Id
+	//Word  Id 
 	public int attribute_name;
 	
 	public Attribute()

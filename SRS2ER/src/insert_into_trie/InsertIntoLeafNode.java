@@ -39,7 +39,7 @@ public class InsertIntoLeafNode {
 		rtCurrent = seq.RelationShips.iterator();
 
 		if (!n.LeafNode.isEmpty()) {
-			System.out.println("There is a similar pos sequence");
+			System.out.println("There is a similar pos sequence ");
 			Set<Sequence> seqPresent = n.LeafNode.keySet();
 
 			Iterator<Sequence> it = seqPresent.iterator();

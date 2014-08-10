@@ -52,7 +52,7 @@ public class InsertIntoTrie {
 
 			if (nextNode.edges.containsKey(nextPOS)) {
 				nextNode = nextNode.edges.get(nextPOS);
-				System.out.println("Already present");
+				System.out.println("Already present ");
 
 			} else // tag not found in trie
 			{

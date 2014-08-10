@@ -44,7 +44,7 @@ public class ReadXML {
 
 		try {
 
-			String trainingData ="D:\\Workplace\\Git Workspace\\SRS2ER\\SRS2ER\\TrainingData.xml";
+			String trainingData ="TrainingData.xml";
 			// Training Data XML file
 			FileInputStream file = new FileInputStream(new File(trainingData));
 

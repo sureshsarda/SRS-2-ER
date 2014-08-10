@@ -41,7 +41,7 @@ public class ReadTaggedTestDataXml {
 
 		try {
 
-			String trainingData = "D:\\Workplace\\Git Workspace\\SRS2ER\\SRS2ER\\TaggedTestSentence.xml";
+			String trainingData = "TaggedTestSentence.xml";
 			// Training Data XML file
 			FileInputStream file = new FileInputStream(new File(trainingData));
 

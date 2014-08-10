@@ -12,7 +12,7 @@ import node.*;
 
 public class ERTagTestData {
 
-	// Root node to traverse
+	// Root  node to traverse
 	Node n = InsertIntoTrie.rootNode;
 
 	String[] engSentence = new String[30];

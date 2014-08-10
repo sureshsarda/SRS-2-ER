@@ -22,7 +22,7 @@ public class POSTagTestData {
 	Collection<String> POSSequence;
 	Set<Integer> IndexSequence;
 	static LexicalizedParser lp = LexicalizedParser
-			.loadModel("D:\\Workplace\\Git Workspace\\SRS2ER\\SRS2ER\\Tagger\\englishPCFG.ser.gz");
+			.loadModel("Tagger\\englishPCFG.ser.gz");
 	int m;
 
 	public POSTagTestData(String TestSentence) {
