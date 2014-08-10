@@ -56,7 +56,7 @@ public class InsertIntoLeafNode {
 
 					if (previous.entity_name == current.entity_name) {
 
-						System.out.println("Same entity now check attribute");
+						System.out.println("Same entity now check attributes");
 
 						atPrevious = previous.Attr.iterator();
 						atCurrent = current.Attr.iterator();

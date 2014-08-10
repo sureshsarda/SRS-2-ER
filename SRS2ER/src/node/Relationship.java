@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Relationship {
 
-	// Word Id
+	// Word id
 	public int relationship_name;
 	// List of entity objects
 	public List<Entity> Ent = new ArrayList<Entity>();

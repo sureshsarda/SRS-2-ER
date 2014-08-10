@@ -13,7 +13,7 @@ public class RemoveStopWords {
 
 	Sequence s;
 	String sentence;
-	// Load all the Stop Words
+	// Load all the Stop  Words
 	LoadStopWords load_stop_words = new LoadStopWords();
 
 	// Remove stop words and corresponding POS tag
