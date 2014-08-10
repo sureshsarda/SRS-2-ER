@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-//LOAD ALL STOP WORDS FROM FILE IN A LIST
+
 
 public class LoadStopWords {
 

@@ -26,8 +26,8 @@ public class ReadParagraph {
 		try {
 
 			while ((s = br.readLine()) != null) {
-				// Delimiter considered is . and compared using pattern matching
-				// technique
+				// Delimiter considered is . and compared using pattern
+				//matching technique
 				Pattern pat1 = Pattern.compile("[.]");
 				sentences = pat1.split(s);
 				for (int i = 0; i < sentences.length; i++) {
