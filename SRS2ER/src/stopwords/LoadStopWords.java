@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import nlp.WordToken;
+
 
 /**
  * LoadStopWords - Methods to load stop words into memory
@@ -64,6 +66,26 @@ public class LoadStopWords {
 			stopWord.addAll(words);
 		}
 		br.close();
+	}
+	
+	/**
+	 * Remove stop words form sentence made up of WordToken
+	 * <p>This function does not make changes to the passed list. New list should be stored.
+	 * @param words list of WordToken
+	 * @return updated list of WordToken
+	 */
+	public List<WordToken> RemoveStopWords(List<WordToken> words) {
+		List<WordToken> temp = new ArrayList<WordToken>();
+		temp.addAll(words);
+		
+		/*Iterate through all the words and remove search stop wrods to remove*/
+		for (int i = 0; i < temp.size(); i++) {
+			/*if the current word is in stop words list, then remove it*/
+			if (stopWord.contains(temp.get(i).word)) {
+				temp.remove(i);
+			}
+		}
+		return temp;
 	}
 
 }
