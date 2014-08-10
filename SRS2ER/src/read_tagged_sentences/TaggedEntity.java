@@ -5,7 +5,7 @@ import java.util.List;
 
 public class TaggedEntity {
 
-	// Word ID
+	// Word  ID
 		public String entity_name;
 		// List of Attribute objects
 		public List<TaggedAttribute> Attr = new ArrayList<TaggedAttribute>();
