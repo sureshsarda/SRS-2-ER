@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Entity {
 
-	// Word Id
+	// Word  Id
 	public int entity_name;
 	// List of Attribute objects
 	public List<Attribute> Attr = new ArrayList<Attribute>();

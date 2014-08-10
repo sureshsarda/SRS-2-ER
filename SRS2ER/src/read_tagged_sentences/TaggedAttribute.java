@@ -1,7 +1,7 @@
 package read_tagged_sentences;
 
 public class TaggedAttribute {
-	//Word  Id
+	//Word   Id
 		public String  attribute_name;
 		
 		public TaggedAttribute()

@@ -28,7 +28,7 @@ import stop_words.RemoveStopWords;
 import node.*;
 
 public class ReadXML {
-	// List of Training Sequences is  stored
+	// List of Training Sequences is   stored
 	public static List<Sequence> Sequences = new ArrayList<Sequence>();
 	Sequence s;
 	int token_id, ent_name, att_name, rel_name;

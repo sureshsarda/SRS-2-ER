@@ -11,7 +11,7 @@ public class ReviewEntityAndAttributes {
 	public ReviewEntityAndAttributes() {
 		
 		
-		System.out.println("\nRemoved attributes:");
+		System.out.println("\nRemoved  attributes:");
 		for (int i = 0; i < ReadTaggedTestDataXml.TaggedSequence.size(); i++) {
 			t = ReadTaggedTestDataXml.TaggedSequence.get(i);
 

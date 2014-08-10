@@ -27,7 +27,7 @@ public class POSTagTestData {
 
 	public POSTagTestData(String TestSentence) {
 
-		// POS tag sentence using Stanford tagger
+		// POS tag sentence using Stanford  tagger
 
 		List<String> sen = Tag(TestSentence);
 

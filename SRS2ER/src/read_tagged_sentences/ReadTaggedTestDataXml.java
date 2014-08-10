@@ -23,7 +23,7 @@ import org.xml.sax.SAXException;
 import analyze_tagged_sentences.ReviewEntityAndAttributes;
 
 public class ReadTaggedTestDataXml {
-	// List of Training  Sequences is stored
+	// List of Training   Sequences is stored
 	public static List<Tagged> TaggedSequence = new ArrayList<Tagged>();
 	Tagged t;
 	int ent_name, att_name, rel_name;
