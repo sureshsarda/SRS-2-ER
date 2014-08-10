@@ -1,16 +1,14 @@
 package read_test_data;
 
 import java.io.IOException;
-import java.util.Map;
-
-import stop_words.*;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
+import stop_words.RemoveStopWords;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.Sentence;
 import edu.stanford.nlp.parser.lexparser.LexicalizedParser;

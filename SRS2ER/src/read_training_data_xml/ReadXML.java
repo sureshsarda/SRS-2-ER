@@ -300,21 +300,5 @@ public class ReadXML {
 
 	}
 
-	public static void main(String[] args) throws IOException {
-		ReadXML r = new ReadXML();
-		r.XMLReader();
-		r.read();// Read Training Data XML file
-		// r.display();
 
-		
-		
-		System.out.println("********TESTING********");
-		
-		
-		System.out.println();
-		new ReadParagraph();
-		
-		new ReadTaggedTestDataXml();
-
-	}
 }
