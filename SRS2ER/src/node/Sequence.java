@@ -12,7 +12,7 @@ public class Sequence {
 	// POS tag and word index
 	public Map<Integer,String> pos = new HashMap<Integer, String>();
 
-	// List of  entities in the sentence
+	// List of entities in the sentence
 	public List<Entity> Entities = new ArrayList<Entity>();
 
 	// List of relationship in the sentence

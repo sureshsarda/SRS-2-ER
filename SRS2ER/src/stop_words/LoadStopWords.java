@@ -27,7 +27,7 @@ public class LoadStopWords {
 		}
 		br= new BufferedReader(fr);
 
-		// Storing list of Stop Words  from file in array
+		// Storing list of Stop Words from file in array
 		try {
 			while ((s = br.readLine()) != null) {
 				arr = s.split(",");

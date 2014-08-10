@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Tagged {
 
-	// English  sentence
+	// English sentence
 	public String sentence;
 
 	// List of entities in the sentence

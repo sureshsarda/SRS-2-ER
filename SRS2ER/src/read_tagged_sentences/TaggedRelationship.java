@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TaggedRelationship {
-	// Word  Id
+	// Word Id
 		public String relationship_name;
 		// List of entity objects
 		public List<TaggedEntity> Ent = new ArrayList<TaggedEntity>();

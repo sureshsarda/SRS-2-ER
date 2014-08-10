@@ -24,7 +24,7 @@ public class InsertIntoTrie {
 	{
 		
 	}
-	// Traverse the trie till POS sequence can be traced
+	// Traverse the Trie till POS sequence can be traced
 	public void traverseTrie() {
 		// create a new node
 		nextNode = new Node();
