@@ -12,7 +12,11 @@ import nlp.WordToken;
 
 
 /**
- * LoadStopWords - Methods to load stop words into memory
+ * LoadStopWords - Methods to load stop words into memory.
+ * There is no need to create instance of this class. Stop words are stored in a static location and
+ * Methods required to remove stop words are also static. Though instances can be created and used
+ * 
+ * 
  * @author Pooja Mantri (Edited by Suresh Sarda)
  *
  */
@@ -21,19 +25,20 @@ public class LoadStopWords {
 	/**
 	 * List of stop words 
 	 */
-	public static List<String> stopWord;
+	
+	// TODO Make non static
+	private static List<String> StopWords;
 
 	/**
 	 * Default constructor
 	 * When no parameter is passed, it tries to load stopwords form file "stopWords.csv".
-	 * @exception
 	 */
 	public LoadStopWords() {
 		this("stopwords.csv");
 	}
 	public LoadStopWords(String filename) {
 		
-		stopWord = new ArrayList<String>();
+		setStopWords(new ArrayList<String>());
 		
 		try {
 			Load(filename);	
@@ -50,12 +55,12 @@ public class LoadStopWords {
 	}
 
 	/**
-	 * Loads stopwords from a file. The file should be in Comma Separted Value(CSV) format
+	 * Loads stop words from a file. The file should be in Comma Separted Value(CSV) format
 	 * @param filename the name of file from where to load stop words
 	 * @throws IOException 
 	 * @see FileNotFoundException
 	 */
-	private void Load(String filename) throws IOException {
+	public static void Load(String filename) throws IOException {
 
 		BufferedReader br = new BufferedReader(new FileReader(filename));
 		String line = new String();
@@ -63,7 +68,7 @@ public class LoadStopWords {
 		while ((line = br.readLine()) != null) {
 			List<String> words = new ArrayList<String>();
 			words = Arrays.asList(line.split(","));
-			stopWord.addAll(words);
+			getStopWords().addAll(words);
 		}
 		br.close();
 	}
@@ -74,18 +79,34 @@ public class LoadStopWords {
 	 * @param words list of WordToken
 	 * @return updated list of WordToken
 	 */
-	public List<WordToken> RemoveStopWords(List<WordToken> words) {
+	public static List<WordToken> RemoveStopWords(List<WordToken> words) {
 		List<WordToken> temp = new ArrayList<WordToken>();
 		temp.addAll(words);
 		
 		/*Iterate through all the words and remove search stop wrods to remove*/
 		for (int i = 0; i < temp.size(); i++) {
 			/*if the current word is in stop words list, then remove it*/
-			if (stopWord.contains(temp.get(i).word)) {
+			if (getStopWords().contains(temp.get(i).word.toLowerCase())) {
 				temp.remove(i);
 			}
 		}
 		return temp;
+	}
+	
+	/**
+	 * Get list of stop words
+	 * @return List of strings
+	 */
+	public static List<String> getStopWords() {
+		return StopWords;
+	}
+	
+	/**
+	 * Set stop word list
+	 * @param stopWords list of string
+	 */
+	private static void setStopWords(List<String> stopWords) {
+		StopWords = stopWords;
 	}
 
 }

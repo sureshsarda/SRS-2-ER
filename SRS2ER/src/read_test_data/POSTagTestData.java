@@ -54,7 +54,6 @@ public class POSTagTestData {
 		try {
 			new ERTagTestData(TestSentence, POSSequence, IndexSequence);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

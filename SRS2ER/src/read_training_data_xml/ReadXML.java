@@ -121,7 +121,6 @@ public class ReadXML {
 					// Remove Stop words and corresponding POS tags
 					new RemoveStopWords(0);
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 
@@ -130,7 +129,6 @@ public class ReadXML {
 			}
 
 		} catch (XPathExpressionException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 
